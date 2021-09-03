@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Effect</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <meta name="title" content="Pixel Effect">
+    <meta name="description"
+        content=" Pixel Effect, upload your photos and make it interactive! you can also download " />
+    <meta name="keywords" content="Pixel Effect, Interactive Pixels, Photo Effects" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Humoyun" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./libs/duDialog.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="flex-center">
+            <div class="title">Upload Your Photo</div>
+            <form action="#">
+                <div class="file-field input-field">
+                    <div class="btn white black-text">
+                        <span>File</span>
+                        <input type="file" id="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate white-text" type="text">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="canvas" id="particles">
+            <div class="title">Result</div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <button id="save" style="font-weight: bold;" class="btn accent-3 waves-effect">Save</button>
+    </div>
+    <br>
+    <p>Copyright Humoyun</p>
+    <script src="./libs/duDialog.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>

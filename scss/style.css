@@ -1,0 +1,206 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url("../res/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url("../res/fonts/Poppins-Regular.ttf");
+}
+
+html,
+body {
+  background-color: #fefefe;
+}
+
+.wrapper {
+  width: 100%;
+  height: 400px;
+  background-color: #059BE5;
+  position: relative;
+}
+
+.wrapper .flex-center {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .flex-center .title {
+  font-size: 50px;
+  color: whitesmoke;
+  font-family: PoppinsRegular;
+}
+
+.wrapper .flex-center .button {
+  margin-top: 1.2em;
+  outline: none;
+  font-family: PoppinsBold;
+  border: none;
+  background-color: #fefefe;
+  border-radius: 8px;
+  color: #059BE5;
+  padding: .8em 1.2em;
+  font-size: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container {
+  padding: .8em;
+  margin-top: 1.3em;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .canvas {
+  width: 450px;
+  height: 450px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-family: PoppinsRegular;
+  color: #555;
+}
+/*# sourceMappingURL=style.css.map */

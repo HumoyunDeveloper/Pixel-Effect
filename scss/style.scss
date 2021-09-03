@@ -1,0 +1,75 @@
+@import "./_reset.scss";
+@import "./_variables.scss";
+@import "./_fonts.scss";
+
+@mixin useFlex($dir, $gap, $jc, $ac) {
+    display: flex;
+    flex-direction: $dir;
+    gap: $gap;
+    justify-content: $jc;
+    align-items: $ac;
+}
+
+@mixin box-shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@mixin button($font, $font-size) {
+    outline: none;
+    font-family: $font;
+    border: none;
+    background-color: #fefefe;
+    border-radius: 8px;
+    color: #059BE5;
+    padding: .8em 1.2em;
+    font-size: $font-size;
+    @include box-shadow;
+}
+
+@mixin dim($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+html,
+body {
+    background-color: #fefefe;
+}
+
+.wrapper {
+    width: 100%;
+    height: 400px;
+    background-color: #059BE5;
+    position: relative;
+
+    .flex-center {
+        @include dim(100%, 400px);
+        @include useFlex(column, 10px, center, center);
+
+        .title {
+            font-size: 50px;
+            color: whitesmoke;
+            font-family: $font-family;
+        }
+
+        .button {
+            margin-top: 1.2em;
+            @include button($font-bold, 16px);
+        }
+    }
+}
+
+.container {
+    padding: .8em;
+    margin-top: 1.3em;
+    @include useFlex(row, 10px, center, center);
+    .canvas {
+        @include dim(450px, 450px);
+        @include box-shadow;
+        border-radius: 10px;
+        @include useFlex(column, 10px, center, center);
+        font-size: 35px;
+        font-family: $font-family;
+        color: #555;
+    }
+}
